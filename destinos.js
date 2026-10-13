@@ -9,10 +9,10 @@ window.DESTINOS = {
   /* --- Caso 3 · La caja 14 (Expediente 23-M-014) --- */
   "c3/escena":   "/escenas/caja14/",          // escena del almacén (hoja 17)
   "c3/v0":       "/videos/caja14-v0/",        // película muda de presentación (alojada aquí mismo)
-  "c3/v1":       "",                          // cilindro de la Srta. Coll
-  "c3/v2":       "",                          // cilindro del Sr. Varela
-  "c3/pistas":   "",                          // PDF de pistas (Drive)
-  "c3/solucion": ""                           // PDF de solución (Drive)
+  "c3/v1":       "/caja14-v1/"       ,        // cilindro de la Srta. Coll (alojado aquí)
+  "c3/v2":       "/caja14-v2/"       ,        // cilindro del Sr. Varela (alojado aquí)
+  "c3/pistas":   "/docs/caja14/pistas.pdf",   // pistas + hoja de respaldo (versión móvil, alojada aquí)
+  "c3/solucion": "/docs/caja14/solucion.pdf"  // solución (versión móvil, alojada aquí)
 };
 /* Texto que se muestra si un destino está vacío o la web falla */
 window.RESPALDO = {
