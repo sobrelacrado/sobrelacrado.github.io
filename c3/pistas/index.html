@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>Sobre Lacrado</title>
+<style>
+html,body{margin:0;height:100%;background:#14110d;color:#efe6d2;font-family:ui-monospace,Menlo,Consolas,monospace}
+.c{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;text-align:center}
+.sobre{position:relative;width:180px;height:120px;background:#e8dcc0;border-radius:4px;box-shadow:0 14px 40px #000a;overflow:hidden}
+.sobre::before{content:"";position:absolute;left:0;right:0;top:0;height:0;border-left:90px solid transparent;border-right:90px solid transparent;border-top:70px solid #d8c9a6;transform-origin:top;transition:transform .7s ease}
+.abierto .sobre::before{transform:rotateX(180deg)}
+.lacre{position:absolute;left:50%;top:44px;width:46px;height:46px;margin-left:-23px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#c4363c,#7d1418);color:#f3d9c4;font:italic 700 17px/46px Georgia,serif;z-index:2;transition:transform .5s ease,opacity .5s}
+.abierto .lacre{transform:scale(.4) translateY(-60px);opacity:0}
+p{max-width:420px;line-height:1.6;font-size:14px;margin:0}
+small{color:#a8987a;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+a{color:#c9a35a}
+</style></head>
+<body><div class="c" id="c">
+ <div class="sobre"><div class="lacre">SL</div></div>
+ <small>Sobre Lacrado</small>
+ <p id="msg">Abriendo…</p>
+</div>
+<script src="/destinos.js"></script>
+<script>
+(function(){
+  var path=location.pathname.replace(/^\/+|\/+$/g,'').toLowerCase();
+  var D=window.DESTINOS||{}, R=window.RESPALDO||{};
+  var dest=(D[path]||'').trim(), msg=document.getElementById('msg');
+  if(!window.DESTINOS){ msg.innerHTML='No se ha podido abrir el enlace. Compruebe su conexión y vuelva a escanear el código.'; return; }
+  if(!dest){
+    msg.innerHTML='Este contenido todavía no está disponible.'+(R[path]?'<br><br>'+R[path]:'');
+    return;
+  }
+  setTimeout(function(){ document.body.classList.add('abierto'); },150);
+  setTimeout(function(){ location.replace(dest + location.search + location.hash); },900);
+  msg.innerHTML='Abriendo… <br><small><a href="'+dest+'">pulse aquí si no se abre</a></small>';
+})();
+</script></body></html>
