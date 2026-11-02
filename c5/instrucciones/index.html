@@ -4,12 +4,15 @@
 <style>
 :root{--navy:#14213D;--sand:#FFF1E2;--yel:#F7C548}
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:var(--navy);color:var(--sand);font-family:"Josefin Sans",Arial,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px}
+body{margin:0;min-height:100vh;background:var(--navy);color:var(--sand);font-family:"Josefin Sans",Arial,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px 16px 110px}
 h1{font-size:18px;margin:0 0 12px;color:var(--yel);text-align:center;letter-spacing:.5px}
-video{width:100%;max-width:420px;max-height:80vh;border:3px solid var(--sand);border-radius:14px;background:#000}
+video{width:100%;max-width:420px;max-height:68vh;border:3px solid var(--sand);border-radius:14px;background:#000}
 p{max-width:420px;font-size:14px;text-align:center;opacity:.85;margin:12px 0 0}
+.barra{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:var(--navy);border-top:3px solid var(--yel)}
+a.vol{display:block;width:100%;max-width:420px;margin:0 auto;padding:18px;background:var(--yel);color:var(--navy);border:3px solid var(--sand);border-radius:14px;text-align:center;font-weight:700;font-size:22px;text-decoration:none}
 </style></head><body>
 <h1>LA NOCHE DEL MIRAMAR · INSTRUCCIONES</h1>
 <video controls playsinline preload="metadata" poster="poster.jpg" src="video.mp4"></video>
-<p>Vídeo de 1 min 30 s. También tienes las instrucciones escritas en la hoja «Instrucciones» del expediente.</p>
+<p>Vídeo de 1 min 30 s. El reloj sigue contando mientras lo ves. También tienes las instrucciones escritas en la hoja «Instrucciones» del expediente.</p>
+<div class="barra"><a class="vol" href="https://app-sobre-lacrado.web.app/s/a779zq/tiempo">⏱ Volver al temporizador</a></div>
 </body></html>
