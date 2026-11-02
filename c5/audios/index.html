@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Audios opcionales · La noche del Miramar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Josefin+Sans:wght@400;600;700&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+<style>
+:root{--piscina:#1B7F8E;--coral:#F2685B;--amarillo:#F7C548;--arena:#FFF1E2;--marino:#14213D;--lacre:#B3202A;--papel:#FFF9F1}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--arena);color:var(--marino);font-family:"Josefin Sans","Trebuchet MS",Arial,sans-serif;font-size:17px;line-height:1.4}
+.cab{background:var(--marino);color:var(--arena);padding:10px 16px 9px;border-bottom:5px solid var(--coral);position:relative}
+.cab::after{content:"";position:absolute;left:0;right:0;bottom:-9px;height:4px;background:var(--amarillo)}
+.cab .t1{font-family:"Bowlby One",Impact,"Arial Black",sans-serif;font-size:15px;letter-spacing:.3px;line-height:1.15}
+.cab .t1 span{color:var(--amarillo)}
+.cab .t2{font-size:13px;opacity:.8;margin-top:2px}
+main{max-width:560px;margin:0 auto;padding:22px 16px 28px}
+h1{font-family:"Bowlby One",Impact,"Arial Black",sans-serif;font-weight:400;font-size:26px;line-height:1.1;margin:4px 0 6px;color:var(--marino)}
+.tag{font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--piscina);font-weight:700}
+p{margin:0 0 12px}
+.card{background:var(--papel);border:2px solid var(--marino);border-radius:14px;padding:12px 14px;margin:0 0 14px}
+.card h2{font-size:15px;letter-spacing:.8px;text-transform:uppercase;margin:0 0 8px;color:var(--piscina)}
+.btn{display:block;width:100%;min-height:54px;border:3px solid var(--marino);border-radius:14px;background:var(--amarillo);color:var(--marino);font:700 18px/1.15 "Josefin Sans",Arial,sans-serif;padding:10px 14px;cursor:pointer;touch-action:manipulation}
+.btn:active{transform:translateY(2px)}
+.btn.sec{background:var(--papel)}
+.btn.on{background:var(--piscina);color:#fff}
+.btn:focus-visible,input:focus-visible,.hit:focus-visible{outline:4px solid var(--coral);outline-offset:2px}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.row>.btn{flex:1 1 0;min-width:0}
+.nota{font-size:14px;color:#3b4660;border-top:2px dashed var(--piscina);margin-top:20px;padding-top:12px}
+.nota b{color:var(--coral)}
+.aviso{background:var(--marino);color:var(--arena);border-radius:12px;padding:10px 14px;font-size:15px;margin:0 0 16px}
+.aviso b{color:var(--amarillo)}
+svg{display:block}
+
+</style>
+<style>
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 14px}
+.tab{min-height:64px;border:3px solid var(--marino);border-radius:14px;background:var(--papel);color:var(--marino);font:700 17px/1.15 "Josefin Sans",Arial,sans-serif;padding:8px;cursor:pointer;touch-action:manipulation}
+.tab small{display:block;font-weight:600;font-size:13px;opacity:.8}
+.tab[aria-selected=true]{background:var(--marino);color:var(--amarillo)}
+.esc{font-size:14px;color:var(--piscina);font-weight:700;margin:0 0 4px}
+.ln{border-left:8px solid var(--piscina);background:#fff;border-radius:6px 12px 12px 6px;padding:10px 12px;margin:0 0 10px;transition:background .2s,border-color .2s}
+.ln.ad{border-left-color:var(--coral)}
+.ln b{display:block;font-size:14px;letter-spacing:.8px;text-transform:uppercase;color:var(--marino);margin:0 0 2px}
+.ln span{font-family:"Delicious Handrawn","Josefin Sans",cursive;font-size:21px;line-height:1.3}
+.ln.act{background:#FFF1B8;border-left-color:var(--amarillo)}
+.estado{font-size:14px;color:#3b4660;margin:0 0 10px}
+.badge{display:inline-block;background:var(--marino);color:var(--arena);border-radius:20px;padding:2px 10px;font-size:13px;font-weight:700;margin-right:6px}
+audio{width:100%;margin:0 0 10px}
+.pie{font-size:15px;font-style:italic;margin:0 0 12px}
+</style>
+</head>
+<body>
+<header class="cab"><div class="t1">La noche del Miramar <span>·</span> Sobre Lacrado</div></header>
+<main>
+  <div class="tag">Hoja de Instrucciones · Audios «Pared fina» y «Dictáfono» (opcional)</div>
+  <h1>Los audios</h1>
+  <div class="aviso"><b>Escucha «Pared fina» solo cuando la tarjeta «Escuchar tras la puerta de la 112» te lo indique; «Dictáfono» cuando lo indique la tarjeta «Escuchar el dictáfono».</b></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="t1" aria-selected="false" aria-controls="panel" type="button">Pared fina<small>Escuchar tras la puerta de la 112</small></button>
+    <button class="tab" role="tab" id="t2" aria-selected="false" aria-controls="panel" type="button">Dictáfono<small>Escuchar el dictáfono</small></button>
+  </div>
+
+  <section id="panel" aria-live="polite">
+    <p class="estado" id="intro">Elige el audio que te haya indicado la tarjeta. El texto no se muestra hasta que lo eliges.</p>
+  </section>
+
+  <p class="nota"><b>También puedes hacerlo en papel</b>: todo lo que dicen está escrito en las tarjetas «Escuchar tras la puerta de la 112» («Pared fina») y «Escuchar el dictáfono» («Dictáfono»). El juego funciona sin escuchar nada.</p>
+</main>
+<script>
+(function(){
+"use strict";
+var AUD={
+ a1:{titulo:"Pared fina",esc:"Voces apagadas tras la puerta de la 112, en el pasillo de la 1.ª planta.",mp3:"a1.mp3",
+  lineas:[
+   {q:"Evaristo",t:"No te renuevo, Adela. Con los nuevos dueños no habrá música en directo."},
+   {q:"Adela",t:"Treinta noches cantando para ti. Una carta, Evaristo: una recomendación para Atlántida. Quintana dice que allí hay sitio, si tú me avalas."},
+   {q:"Evaristo",t:"Mañana a las nueve se revisan los libros, con ese hombre delante. Mañana hablamos de cartas. Esta noche déjame: hay alguien de los míos que me falla."},
+   {q:"Adela",t:"Tú me debes esa carta."}
+  ],pie:""},
+ a2:{titulo:"Dictáfono",esc:"Una grabación de dictáfono, con la cinta algo gastada.",mp3:"a2.mp3",
+  lineas:[
+   {q:"Evaristo",t:"Los cierres de la caja de noche no cuadran. Mañana, con Quintana delante, hablaré de ello. Bajaré a las dos y cuarto por mi leche, como cada noche, por el montacargas, que con estas rodillas… Y si algún día llama a esta puerta, que no me falte valor."}
+  ],pie:"La última frase no se la dice a nadie en particular."}
+};
+// ajustes por personaje (se cambia tono y ritmo aunque haya una sola voz)
+var PERS={
+ "Evaristo":{pitch:0.62,rate:0.82,fem:false},
+ "Adela":{pitch:1.35,rate:0.92,fem:true}
+};
+var FEM=/helena|laura|elvira|m[oó]nica|paulina|luc[ií]a|marisol|female|mujer|sabina|paloma|esperanza/i;
+var MAS=/pablo|jorge|enrique|diego|male|hombre|carlos|alvaro|álvaro/i;
+var voces=[];
+function cargar(){if(window.speechSynthesis)voces=speechSynthesis.getVoices().filter(function(v){return /^es/i.test(v.lang);});}
+if(window.speechSynthesis){cargar();speechSynthesis.onvoiceschanged=cargar;}
+function voz(q){
+  if(!voces.length)return null;
+  var pe=PERS[q]||PERS.Evaristo;
+  var es=voces.filter(function(v){return /es[-_]ES/i.test(v.lang);});if(!es.length)es=voces;
+  var pref=es.filter(function(v){return pe.fem?FEM.test(v.name):MAS.test(v.name);})[0];
+  if(pref)return pref;
+  // si hay varias voces, una distinta por personaje
+  var idx=Object.keys(PERS).indexOf(q);
+  return es[Math.min(idx<0?0:idx,es.length-1)];
+}
+var cur=null,corre=false,audioEl=null,modo="tts",hid=0;
+var panel=document.getElementById("panel");
+var tabs={a1:document.getElementById("t1"),a2:document.getElementById("t2")};
+function esc(s){return s.replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
+function parar(){
+  hid++;corre=false;
+  if(window.speechSynthesis)speechSynthesis.cancel();
+  if(audioEl){try{audioEl.pause();}catch(e){}}
+  document.querySelectorAll(".ln.act").forEach(function(n){n.classList.remove("act");});
+  var b=document.getElementById("play");if(b)b.textContent="▶ Escuchar";
+}
+function mostrar(id){
+  parar();cur=id;var A=AUD[id];
+  Object.keys(tabs).forEach(function(k){tabs[k].setAttribute("aria-selected",k===id?"true":"false");});
+  var h='<h2 style="font-family:Bowlby One,Impact,sans-serif;font-weight:400;font-size:21px;margin:0 0 4px">'+esc(A.titulo)+'</h2><p class="esc">'+esc(A.esc)+'</p>';
+  h+='<p class="estado" id="est"></p>';
+  h+='<div id="mp3box"></div>';
+  h+='<button class="btn" id="play" type="button">▶ Escuchar</button><div style="height:14px"></div>';
+  A.lineas.forEach(function(l,i){h+='<div class="ln'+(l.q==="Adela"?' ad':'')+'" id="l'+i+'"><b>'+esc(l.q)+'</b><span>«'+esc(l.t)+'»</span></div>';});
+  if(A.pie)h+='<p class="pie">'+esc(A.pie)+'</p>';
+  panel.innerHTML=h;
+  document.getElementById("play").addEventListener("click",alternar);
+  probarMp3(A);
+}
+function probarMp3(A){
+  var est=document.getElementById("est"),box=document.getElementById("mp3box");
+  audioEl=null;modo="tts";
+  est.innerHTML='<span class="badge">Voz del navegador</span>Lectura con la voz de tu móvil en español de España.';
+  if(!window.speechSynthesis)est.innerHTML='<span class="badge">Solo texto</span>Tu navegador no tiene voz: lee el texto de abajo.';
+  var a=new Audio();a.preload="auto";
+  var mio=hid;
+  a.addEventListener("canplay",function(){
+    if(cur===null||AUD[cur]!==A)return;
+    audioEl=a;modo="mp3";
+    est.innerHTML='<span class="badge">Audio grabado</span>';
+    a.controls=true;a.style.width="100%";box.textContent="";box.appendChild(a);
+    document.getElementById("play").hidden=true;
+  },{once:true});
+  a.addEventListener("ended",function(){parar();});
+  a.src=A.mp3;
+}
+function alternar(){
+  var b=document.getElementById("play");
+  if(corre){parar();return;}
+  if(modo==="mp3"&&audioEl){audioEl.play();return;}
+  if(!window.speechSynthesis){b.textContent="Sin voz en este navegador";return;}
+  var A=AUD[cur],mi=++hid;corre=true;b.textContent="■ Parar";
+  speechSynthesis.cancel();
+  var i=0;
+  function sig(){
+    if(mi!==hid)return;
+    document.querySelectorAll(".ln.act").forEach(function(n){n.classList.remove("act");});
+    if(i>=A.lineas.length){corre=false;b.textContent="▶ Escuchar otra vez";return;}
+    var l=A.lineas[i],pe=PERS[l.q]||PERS.Evaristo;
+    var nodo=document.getElementById("l"+i);if(nodo){nodo.classList.add("act");nodo.scrollIntoView({block:"center",behavior:"smooth"});}
+    // se parte en frases para dar pausas
+    var frases=(l.t.match(/[^.:!?…]+[.:!?…]*\s*/g)||[l.t]),k=0;
+    (function frase(){
+      if(mi!==hid)return;
+      if(k>=frases.length){i++;setTimeout(sig,550);return;}
+      var u=new SpeechSynthesisUtterance(frases[k]);
+      u.lang="es-ES";var v=voz(l.q);if(v)u.voice=v;
+      u.pitch=pe.pitch;u.rate=pe.rate;
+      if(cur==="a2"&&i===0&&k===frases.length-1){u.volume=0.6;u.rate=pe.rate*0.85;}
+      u.onend=function(){k++;setTimeout(frase,k<frases.length?260:0);};
+      u.onerror=function(){k++;frase();};
+      speechSynthesis.speak(u);
+    })();
+  }
+  sig();
+}
+tabs.a1.addEventListener("click",function(){mostrar("a1");});
+tabs.a2.addEventListener("click",function(){mostrar("a2");});
+document.addEventListener("visibilitychange",function(){if(document.hidden)parar();});
+window.addEventListener("pagehide",parar);
+})();
+</script>
+</body>
+</html>
