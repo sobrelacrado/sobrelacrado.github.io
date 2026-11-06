@@ -12,7 +12,15 @@ window.DESTINOS = {
   "c3/v1":       "/caja14-v1/"       ,        // cilindro de la Srta. Coll (alojado aquí)
   "c3/v2":       "/caja14-v2/"       ,        // cilindro del Sr. Varela (alojado aquí)
   "c3/pistas":   "/docs/caja14/pistas.pdf",   // pistas + hoja de respaldo (versión móvil, alojada aquí)
-  "c3/solucion": "/docs/caja14/solucion.pdf"  // solución (versión móvil, alojada aquí)
+  "c3/solucion": "/docs/caja14/solucion.pdf",  // solución (versión móvil, alojada aquí)
+
+  /* --- Caso 2 · Expediente IP-26-031 (vídeos alojados aquí) --- */
+  "c2/v1": "/caso2-v1/",
+  "c2/v2": "/caso2-v2/",
+  "c2/v3": "/caso2-v3/",
+  "c2/v4": "/caso2-v4/",
+  "c2/v5": "/caso2-v5/",
+  "c2/v6": "/caso2-v6/"
 };
 /* Texto que se muestra si un destino está vacío o la web falla */
 window.RESPALDO = {
